@@ -1,0 +1,7 @@
+sandwich.build:
+  path: '/sandwich'
+  defaults:
+    _content: '\Drupal\sandwich\Controller\SandwichController::build'
+    _title: 'Sandwich'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Sandwich module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function sandwich_theme() {
+  return array(
+    'sandwich' => array(
+      'variables' => array(
+        'attributes' => array(),
+        'name' => '',
+        'bread' => '',
+        'cheese' => '',
+        'veggies' => array(),
+        'protein' => '',
+        'condiments' => array(),
+      ),
+      'template' => 'sandwich',
+    ),
+  );
+}

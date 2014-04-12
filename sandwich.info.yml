@@ -1,0 +1,5 @@
+name: Sandwich
+type: module
+description: Delicious ingredients only.
+package: Development
+core: 8.x
