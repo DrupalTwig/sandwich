@@ -28,7 +28,7 @@ class SandwichController extends ControllerBase {
       ),
       '#bread' => $this->t('Sourdough'),
       '#cheese' => $this->t('Gruyère'),
-      '#veggies' => array($this->t('Avocado'), $this->t('Red onion'), $this->t('Romain')),
+      '#veggies' => array($this->t('Avocado'), $this->t('Red onion'), $this->t('Romaine')),
       '#protein' => $this->t('Chicken'),
       '#condiments' => array($this->t('Mayo'), $this->t('Dijon')),
     );
