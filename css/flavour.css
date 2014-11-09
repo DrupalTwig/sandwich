@@ -1,13 +1,21 @@
 
-section {
-  font-size: 1.5em;
-  color: black;
+h1.title {
+  color: #666;
+  border-bottom: 1px solid #ccc;
 }
 
+section {
+  font-size: 1.4em;
+  color: #292929;
+}
+
+section strong {
+  color: #055a8e;
+}
 
 section h2 {
   margin: 0;
-  color: #ff6600;
+  color: #055a8e;
 }
 
 section p {

@@ -19,7 +19,6 @@ class SandwichController extends ControllerBase {
    */
   public function build() {
 
-
     $best_sandwich = [
       '#theme' => 'sandwich',
       '#name' => $this->t('Chickado'),
@@ -64,6 +63,7 @@ class SandwichController extends ControllerBase {
     ];
     $path = drupal_get_path('module', 'sandwich');
     return [
+      '#title' => 'Menu',
       '#type' => 'container',
       '#attached' => ['css' => ['/' . $path . '/css/flavour.css']],
       '#attributes' => ['class' => ['admin']],
