@@ -18,40 +18,58 @@ class SandwichController extends ControllerBase {
    * Builds a sandwich.
    */
   public function build() {
-    $best_sandwich = array(
+
+
+    $best_sandwich = [
       '#theme' => 'sandwich',
       '#name' => $this->t('Chickado'),
-      '#attributes' => array(
+      '#attributes' => [
         'id' => 'best-sandwich',
         'style' => 'float: left;',
-        'class' => array('left', 'clearfix'),
-      ),
+        'class' => ['left', 'clearfix'],
+      ],
       '#bread' => $this->t('Sourdough'),
       '#cheese' => $this->t('Gruyère'),
-      '#veggies' => array($this->t('Avocado'), $this->t('Red onion'), $this->t('Romaine')),
+      '#veggies' => [
+        $this->t('Avocado'),
+        $this->t('Red onion'),
+        $this->t('Romaine'),
+      ],
       '#protein' => $this->t('Chicken'),
-      '#condiments' => array($this->t('Mayo'), $this->t('Dijon')),
-    );
+      '#condiments' => [
+        $this->t('Mayo'),
+        $this->t('Dijon'),
+      ],
+    ];
 
-    $alt_best_sandwich = array(
+    $alt_best_sandwich = [
       '#theme' => 'sandwich',
       '#name' => $this->t('Vegan'),
-      '#attributes' => array(
+      '#attributes' => [
         'id' => 'alt-sandwich',
         'style' => 'float: right;',
-        'class' => array('right', 'clearfix'),
-      ),
+        'class' => ['right', 'clearfix'],
+      ],
       '#bread' => $this->t('Multigrain'),
-      '#veggies' => array($this->t('Avocado'), $this->t('Tomato'), $this->t('Arugula')),
+      '#veggies' => [
+        $this->t('Avocado'),
+        $this->t('Tomato'),
+        $this->t('Arugula'),
+      ],
       '#protein' => $this->t('Faken'),
-      '#condiments' => array($this->t('Dijon'), $this->t('Vegan Mayo')),
-    );
-    return array(
+      '#condiments' => [
+        $this->t('Dijon'),
+        $this->t('Vegan Mayo'),
+      ],
+    ];
+    $path = drupal_get_path('module', 'sandwich');
+    return [
       '#type' => 'container',
-      '#attributes' => array('class' => array('admin')),
+      '#attached' => ['css' => ['/' . $path . '/css/flavour.css']],
+      '#attributes' => ['class' => ['admin']],
       $best_sandwich,
       $alt_best_sandwich,
-    );
+    ];
   }
 
 }

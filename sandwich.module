@@ -9,18 +9,17 @@
  * Implements hook_theme().
  */
 function sandwich_theme() {
-  return array(
-    'sandwich' => array(
-      'variables' => array(
-        'attributes' => array(),
+  return [
+    'sandwich' => [
+      'variables' => [
+        'attributes' => [],
         'name' => '',
         'bread' => '',
         'cheese' => '',
-        'veggies' => array(),
+        'veggies' => [],
         'protein' => '',
-        'condiments' => array(),
-      ),
-      'template' => 'sandwich',
-    ),
-  );
+        'condiments' => [],
+      ],
+    ],
+  ];
 }
