@@ -9,12 +9,12 @@ section {
   color: #292929;
 }
 
-section strong {
+#content section h2 {
+  margin: 0.25em 0;
   color: #055a8e;
 }
 
-section h2 {
-  margin: 0;
+section strong {
   color: #055a8e;
 }
 
