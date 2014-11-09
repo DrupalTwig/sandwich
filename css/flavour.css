@@ -1,7 +1,12 @@
 
-h1.title {
-  color: #666;
-  border-bottom: 1px solid #ccc;
+section h1#page-title {
+  color: #999;
+  text-align: center;
+  font-size: 3em;
+  border-bottom: 2px solid #055a8e;
+  padding-bottom: 0.25em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 section {
@@ -12,6 +17,8 @@ section {
 #content section h2 {
   margin: 0.25em 0;
   color: #055a8e;
+  border-bottom: 1px solid #055a8e;
+
 }
 
 section strong {
