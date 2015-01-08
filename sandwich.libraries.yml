@@ -1,0 +1,5 @@
+flavour:
+  version: VERSION
+  css:
+    theme:
+      css/flavour.css: {}
