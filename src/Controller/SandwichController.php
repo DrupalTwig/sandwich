@@ -61,11 +61,10 @@ class SandwichController extends ControllerBase {
         $this->t('Vegan Mayo'),
       ],
     ];
-    $path = drupal_get_path('module', 'sandwich');
     return [
       '#title' => 'Menu',
       '#type' => 'container',
-      '#attached' => ['css' => ['/' . $path . '/css/flavour.css']],
+      '#attached' => ['library' => ['sandwich/flavour']],
       '#attributes' => ['class' => ['admin']],
       $best_sandwich,
       $alt_best_sandwich,
