@@ -42,7 +42,7 @@ class SandwichController extends ControllerBase {
 
     $alt_best_sandwich = [
       '#theme' => 'sandwich',
-      '#name' => $this->t('Vegan'),
+      '#name' => $this->t('Yummy'),
       '#attributes' => [
         'id' => 'alt-sandwich',
         'class' => ['menu--right', 'clearfix'],
