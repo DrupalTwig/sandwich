@@ -49,4 +49,5 @@
 
 #main-wrapper .region-content section ul {
   margin: 0.25em 1em;
+  list-style-position: inside;
 }
