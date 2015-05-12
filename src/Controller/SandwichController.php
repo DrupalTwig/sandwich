@@ -24,8 +24,7 @@ class SandwichController extends ControllerBase {
       '#name' => $this->t('Chickado'),
       '#attributes' => [
         'id' => 'best-sandwich',
-        'style' => 'float: left;',
-        'class' => ['left', 'clearfix'],
+        'class' => ['menu--left', 'clearfix'],
       ],
       '#bread' => $this->t('Sourdough'),
       '#cheese' => $this->t('Gruyère'),
@@ -46,8 +45,7 @@ class SandwichController extends ControllerBase {
       '#name' => $this->t('Vegan'),
       '#attributes' => [
         'id' => 'alt-sandwich',
-        'style' => 'float: right;',
-        'class' => ['right', 'clearfix'],
+        'class' => ['menu--right', 'clearfix'],
       ],
       '#bread' => $this->t('Multigrain'),
       '#veggies' => [

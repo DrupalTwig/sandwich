@@ -1,33 +1,52 @@
 
-section h1#page-title {
-  color: #999;
+.menu--left,
+.menu--right {
+  width: 50%;
+  text-align: center;
+}
+
+.menu--left {
+  float: left;
+}
+
+.menu--right {
+  float: right;
+}
+
+/* Hack because of CSS loading order */
+#main-wrapper {
+  font-family: 'Kalam', cursive;
+  color: #292929;
+}
+
+#main-wrapper #page-title {
+
   text-align: center;
   font-size: 3em;
-  border-bottom: 2px solid #055a8e;
+  border-bottom: 2px solid #cc9900;
   padding-bottom: 0.25em;
   margin-top: 0.25em;
   margin-bottom: 0.25em;
 }
 
-section {
+#main-wrapper section {
   font-size: 1.4em;
-  color: #292929;
 }
 
-#content section h2 {
+#main-wrapper #content section h2 {
   margin: 0.25em 0;
-  color: #055a8e;
-  border-bottom: 1px solid #055a8e;
+  color: #cc9900;
+  border-bottom: 1px solid #cc9900;
 }
 
-section strong {
-  color: #055a8e;
+#main-wrapper section strong {
+  color: #cc9900;
 }
 
-section p {
+#main-wrapper section p {
   margin: 0 0 0.25em;
 }
 
-.region-content section ul {
+#main-wrapper .region-content section ul {
   margin: 0.25em 1em;
 }
