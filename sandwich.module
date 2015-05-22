@@ -23,3 +23,28 @@ function sandwich_theme() {
     ],
   ];
 }
+
+/**
+ * Implements hook_theme_suggestions_sandwich().
+ */
+function sandwich_theme_suggestions_sandwich($variables) {
+  return 'sandwich__' . strtolower($variables['name']);
+}
+
+/**
+ * Implements hook_theme_suggestions_sandwich_alter().
+ */
+function sandwich_theme_suggestions_sandwich_alter(&$suggestions, $variables) {
+}
+
+/**
+ * Implements template_preprocess_sandwich().
+ */
+function template_preprocess_sandwich(&$variables) {
+}
+
+/**
+ * Implements hook_preprocess_sandwich().
+ */
+function sandwich_preprocess_sandwich(&$variables) {
+}
