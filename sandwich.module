@@ -4,6 +4,7 @@
  * @file
  * Sandwich module.
  */
+use Drupal\Component\Utility\Html;
 
 /**
  * Implements hook_theme().
@@ -28,7 +29,7 @@ function sandwich_theme() {
  * Implements hook_theme_suggestions_sandwich().
  */
 function sandwich_theme_suggestions_sandwich($variables) {
-  return 'sandwich__' . strtolower($variables['name']);
+  return 'sandwich__' . Html::cleanCssIdentifier(strtolower($variables['name']));
 }
 
 /**
