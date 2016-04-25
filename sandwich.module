@@ -29,7 +29,7 @@ function sandwich_theme() {
  * Implements hook_theme_suggestions_sandwich().
  */
 function sandwich_theme_suggestions_sandwich($variables) {
-  return 'sandwich__' . Html::cleanCssIdentifier($variables['name']);
+  return 'sandwich__' . strtolower(Html::cleanCssIdentifier($variables['name']));
 }
 
 /**
